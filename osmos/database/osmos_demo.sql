@@ -1,6 +1,6 @@
 
 -- In order to become the first admin, you will have to do this manually in PHPMyAdmin users table , is_admin = 1 not 0 
-
+-- every demo users password is osmos123
 
 SET NAMES utf8mb4 COLLATE utf8mb4_general_ci;
 
