@@ -1,0 +1,16 @@
+# user uploads, nothing in here should ever run as code
+
+Options -Indexes
+
+# block script files
+<FilesMatch "\.(php[0-9]?|phtml|phar|pht|cgi|pl|py|sh|asp|aspx|jsp)$">
+    Require all denied
+</FilesMatch>
+
+# turn off php here, only works with mod_php
+<IfModule mod_php.c>
+    php_flag engine off
+</IfModule>
+<IfModule mod_php7.c>
+    php_flag engine off
+</IfModule>
